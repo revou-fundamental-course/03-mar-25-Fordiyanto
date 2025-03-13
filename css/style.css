@@ -1,0 +1,329 @@
+/* Ini file css */
+
+body {
+    margin: 15px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 16px 24px;
+    }
+
+.link-button {
+        text-decoration: none;
+    }
+  .header-wrapper > .menu {
+    display: flex;
+  }
+
+  .header-wrapper > .menu > button {
+    background-color: white;
+    padding: 8px 16px;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+}
+
+  .header-wrapper > .menu > button:hover {
+    background-color: gainsboro;
+  }
+
+  .header-wrapper > .menu > button:first-child {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .header-wrapper > .menu > button:last-child {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .header-wrapper > .main-logo {
+    background-image: url(../assets/Logo-Ford.jpeg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 5px;
+    padding: 27px;
+    padding-left: 116px;
+}
+
+  
+/* Judul */
+.header-wrapper > .judul {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    color: darkslateblue;
+    margin-bottom: 12px;
+}
+  .main-content {
+    padding: 24px;
+  }
+
+  .main-content .form-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+  }
+
+  .main-content .form-section form,
+  .main-content .form-section div {
+    width: 100%;
+  }
+
+  .img-slideshow {
+    width: 100%;
+  }
+
+  .banner-img {
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+
+/* Ukuran HP */
+  @media only screen and (max-width: 600px) {
+    .header-wrapper {
+      flex-direction: column;
+    }
+
+    .menu {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .main-logo {
+      margin-bottom: 14px;
+    }
+    /* Banner */
+    .banner-img {
+        background-position: center;
+        background-size: cover;
+        height: 165px;
+    } 
+    
+    /* Behind The Scene */
+    .behind-the-scene {
+        border: 1px solid;
+        height: 530px;
+        padding: 21px;
+        text-align: center;
+    }
+
+    /* Message Container */
+    .message-container {
+        display: flex    ;
+        flex-direction: column;
+        width: 100%;
+        height: 395px;
+        margin-bottom: 90px;
+    }
+    
+    /* Message Form */
+    .message-form {
+        width: 86%;
+        height: 108%;
+    }
+    /* Message Result */
+    .message-result {
+        margin-top: 14px;
+        width: 340px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        display: flex;
+    }
+
+    /* Message-Us */
+    .message-us {
+        height: 533px;
+    }
+  }
+
+nav {
+    display: flex;
+}
+
+nav>a {
+    padding: 8px;
+    border: 1px solid;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Background Image */
+.banner-1 {
+    /* Local Image */
+    background-image: url(../assets/Ford.jpeg);
+}
+
+.banner-2 {
+    background-image: url(../assets/Ford2.jpeg);
+}
+
+.banner-3 {
+    background-image: url(../assets/Ford3.jpeg);
+}
+
+/* Specification Style */
+.specification {
+    align-content: center;
+    text-align: center;
+}
+
+/* Table Style */
+#spec {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #spec td, #spec th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #spec tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #spec tr:hover {background-color: #ddd;}
+  
+  #spec th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+/* Behind The Scene Style */
+.behind-the-scene {
+    border: 1px solid;
+    height: 150px;
+    padding: 21px;
+    text-align: center;
+}
+
+.message-us-content {
+    border: 1px solid;
+    height: 500px;
+    align-content: center;
+    text-align: left;
+}
+
+
+/* Message */
+/* Styling Form Group */
+.form-group {
+    display: flex;
+    align-items: top;
+    margin-bottom: 5px;
+}
+
+/* Label buat kirim pesan */
+.form-group>label {
+    width: 128px;
+    font-weight: bold;
+}
+
+/* Input buat kirim pesan */
+.form-group>input,
+.form-group>textarea {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Textarea buat kirim pesan */
+.form-group>textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Radio Group buat kirim pesan */
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Tombol submit buat kirim pesan */
+.message-form>form>input[type="submit"] {
+    width: 100%;
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    /* border-radius: 8px; */
+    transition: background-color 0.3s ease;
+    /* box-shadow: skyblue 0px 0px 10px; */
+}
+
+/* Styling Message */
+.message-title {
+    padding: 0 100px;
+    margin: 50px auto;
+    font-size: 18px;
+    color: black;
+}
+
+/* Paragraf di Message */
+.message-title>p {
+    margin-top: 8px;
+    font-size: medium;
+}
+
+/* Container buat Message */
+.message-container {
+    display: flex;   
+    width: 100%;
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+/* Form untuk kirim pesan */
+.message-form {
+    width: 560px;
+    height: 300px;
+}
+
+/* Form buat kirim pesan */
+.message-form>form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px white;
+}
+
+/* === Styling message-result === */
+.message-result {
+    margin-left: 48px;
+    width: 370px;
+    height: 305px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex
+;
+}
+
+.result-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-text>span {
+    padding: 6px 11px 11px 11px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
