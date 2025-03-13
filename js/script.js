@@ -49,7 +49,7 @@ function submitForm(event) {
 
     // Ambil data dari form
     let name = document.getElementById("name").value; // Ambil nama yang diisi user
-    let birthDate = document.getElementById("birth-date").value; // Ambil tanggal lahir
+    let date = document.getElementById("date").value; // Ambil tanggal
     let message = document.getElementById("message").value; // Ambil pesan yang diinput user
     let gender = document.querySelector('input[name="gender"]:checked'); // Cek jenis kelamin yang telah dipilih
 
@@ -62,7 +62,7 @@ function submitForm(event) {
     // Masukin hasil input ke dalam message-result
     document.getElementById("current-time").textContent = `Current time : ${currentTime}`;
     document.getElementById("result-name").textContent = `Nama : ${name}`;
-    document.getElementById("result-birth").textContent = `Tanggal Lahir : ${birthDate}`;
+    document.getElementById("result-date").textContent = `Tanggal : ${date}`;
     document.getElementById("result-gender").textContent = `Jenis Kelamin : ${genderValue}`;
     document.getElementById("result-message").textContent = `Pesan : ${message}`;
 }
